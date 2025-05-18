@@ -1,0 +1,51 @@
+// Color Palette (Dark Theme with Vibrant Accents)
+$primary-color: #66FFCC; // Vibrant Mint
+$secondary-color: #FF66B2; // Vibrant Pink
+$accent-color: #FFD700;   // Vibrant Gold
+
+$dark-bg: #1A1D24;        // Deep Dark Blue/Gray
+$dark-surface: #2A2D3A;   // Slightly Lighter Dark Surface
+$dark-border: #3A3D4A;    // Dark Border
+
+$light-text: #E0E0E0;     // Light Gray Text
+$medium-text: #A0A0A0;    // Medium Gray Text
+$dark-text: #121212;      // For light backgrounds if ever needed
+
+// Bootstrap variable overrides (optional, can be extensive)
+$body-bg: $dark-bg;
+$body-color: $light-text;
+$link-color: $primary-color;
+$link-hover-color: darken($primary-color, 10%);
+$border-color: $dark-border;
+
+// Typography
+$font-family-sans-serif: 'Space Grotesk', sans-serif; // Titles, general text
+$font-family-monospace: 'Roboto Mono', monospace;    // Code details, specific text
+$font-size-base: 1rem; // 16px
+$line-height-base: 1.6;
+
+// Headings
+$h1-font-size: $font-size-base * 2.8;
+$h2-font-size: $font-size-base * 2.2;
+$h3-font-size: $font-size-base * 1.75;
+
+// Spacing
+$spacer: 1rem;
+$section-padding: $spacer * 4;
+
+// Borders
+$border-radius: 0.25rem;
+$border-radius-lg: 0.5rem;
+
+// Transitions
+$transition-base: all 0.3s ease-in-out;
+
+// Breakpoints (align with Bootstrap or define custom)
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);

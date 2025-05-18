@@ -1,0 +1,59 @@
+body {
+  font-family: $font-family-sans-serif;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $body-color;
+  background-color: $body-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans-serif; // Titles
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: $spacer * 0.75;
+  color: $light-text; // Ensure headings are light on dark bg
+}
+
+h1 { font-size: $h1-font-size; }
+h2 { font-size: $h2-font-size; }
+h3 { font-size: $h3-font-size; }
+// Define others as needed
+
+p {
+  margin-bottom: $spacer;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  transition: $transition-base;
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
+.highlight {
+  color: $primary-color;
+}
+
+// Code specific typography
+pre, code {
+  font-family: $font-family-monospace;
+  background-color: lighten($dark-surface, 5%);
+  padding: 0.2em 0.4em;
+  border-radius: $border-radius;
+  font-size: 0.9em;
+}
+
+pre {
+  padding: $spacer;
+  overflow-x: auto;
+  border: 1px solid $dark-border;
+  code {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+  }
+}

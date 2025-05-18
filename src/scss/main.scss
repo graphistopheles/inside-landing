@@ -1,0 +1,84 @@
+// 1. Abstracts (Variables, Mixins, Functions)
+// Variables and Mixins are auto-imported via vite.config.js `additionalData`
+// @import 'abstracts/variables'; // No need if using additionalData
+// @import 'abstracts/mixins';   // No need if using additionalData
+// @import 'abstracts/functions'; // If you create this
+
+// 2. Vendors (Bootstrap SASS)
+// Import only the parts of Bootstrap you need to optimize bundle size
+// Option 1: Import all of Bootstrap (easier to start, less optimized)
+// @import '~bootstrap/scss/bootstrap';
+
+// Option 2: Import Bootstrap's functions, variables, mixins first (required)
+@import "~bootstrap/scss/functions";
+// Override Bootstrap variables here if needed, before importing the rest
+// $primary: $primary-color; // Example: align Bootstrap's primary with yours
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark"; // If using Bootstrap's dark mode features
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+
+// Then import the parts you need:
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot"; // Includes reset
+@import "~bootstrap/scss/type";
+// @import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/transitions";
+// @import "~bootstrap/scss/dropdown";
+// @import "~bootstrap/scss/button-group";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/navbar"; // For header
+@import "~bootstrap/scss/card";
+// @import "~bootstrap/scss/accordion";
+// @import "~bootstrap/scss/breadcrumb";
+// @import "~bootstrap/scss/pagination";
+@import "~bootstrap/scss/badge";
+// @import "~bootstrap/scss/alert";
+// @import "~bootstrap/scss/progress";
+// @import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+// @import "~bootstrap/scss/toasts";
+// @import "~bootstrap/scss/modal";
+// @import "~bootstrap/scss/tooltip";
+// @import "~bootstrap/scss/popover";
+// @import "~bootstrap/scss/carousel"; // If using Bootstrap carousel
+// @import "~bootstrap/scss/spinners";
+@import "~bootstrap/scss/offcanvas";
+// @import "~bootstrap/scss/placeholders";
+
+// Import Bootstrap utilities API last
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/utilities/api";
+
+
+// 3. Base styles (Reset, Typography, Utilities)
+@import 'base/reset'; // Can be minimal if Bootstrap's reboot is used
+@import 'base/typography';
+@import 'base/utilities'; // Your custom utilities
+
+// 4. Layout (Header, Footer, Grid, Navigation)
+@import 'layout/header';
+@import 'layout/footer';
+// @import 'layout/navigation'; // If separate from header
+// @import 'layout/grid'; // If custom grid beyond Bootstrap
+
+// 5. Components (Buttons, Cards, Forms, etc.)
+// @import 'components/buttons'; // If custom buttons beyond Bootstrap
+@import 'components/cards'; // For feature cards, pricing cards if custom
+// @import 'components/code-editor'; // For the interactive code editor
+// @import 'components/slider'; // For testimonials
+
+// 6. Page-specific styles
+@import 'pages/home';
+// @import 'pages/about';
+// @import 'pages/services';
+// @import 'pages/blog';
+
+// 7. Themes (if any, e.g., dark/light mode toggle)
+// @import 'themes/dark-theme';

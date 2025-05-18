@@ -1,0 +1,62 @@
+.site-footer-main {
+  background-color: $dark-surface;
+  color: $medium-text;
+  padding-top: $section-padding;
+  padding-bottom: $spacer; // Reduced bottom padding as footer-bottom has its own
+  border-top: 1px solid $dark-border;
+
+  .footer-title {
+    color: $light-text;
+    font-weight: 700;
+    margin-bottom: $spacer * 1.5;
+  }
+
+  .footer-links-title {
+    color: $light-text;
+    font-weight: 500;
+    margin-bottom: $spacer;
+  }
+
+  .footer-link {
+    color: $medium-text;
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+
+  .newsletter-form {
+    .form-control {
+      background-color: lighten($dark-surface, 5%);
+      border-color: $dark-border;
+      color: $light-text;
+      &::placeholder {
+        color: $medium-text;
+      }
+    }
+    .btn-primary {
+      @include button-variant($primary-color, $dark-bg);
+    }
+  }
+
+  .footer-bottom {
+    background-color: darken($dark-surface, 3%);
+    border-top: 1px solid $dark-border;
+    margin-top: $section-padding * 0.5;
+    color: darken($medium-text, 10%);
+
+    .social-media-icons {
+      .social-icon {
+        margin-left: $spacer;
+        img {
+          height: 24px; // Adjust as needed
+          opacity: 0.7;
+          transition: opacity $transition-base;
+        }
+        &:hover img {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

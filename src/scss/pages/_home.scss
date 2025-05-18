@@ -1,0 +1,189 @@
+.hero-section {
+  min-height: 80vh; // Adjust as needed
+  @include flex-center(column);
+  background: linear-gradient(rgba($dark-bg, 0.7), rgba($dark-bg, 0.9)), url('/assets/images/hero-bg.jpg') no-repeat center center/cover; // Replace with your hero background
+  padding: $section-padding * 2 $spacer;
+  color: $light-text;
+
+  .hero-title {
+    font-size: $font-size-base * 3.5; // Larger for hero
+    margin-bottom: $spacer;
+    font-weight: 700;
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-base * 4.5;
+    }
+  }
+
+  .hero-subtitle {
+    font-size: $font-size-base * 1.25;
+    margin-bottom: $spacer * 2;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $medium-text;
+  }
+
+  .interactive-code-editor {
+    background-color: lighten($dark-bg, 5%);
+    border: 1px solid $dark-border;
+    border-radius: $border-radius-lg;
+    padding: $spacer * 1.5;
+    margin: $spacer * 2 auto;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    text-align: left;
+    // Styles for the code itself will come from Prism.js or similar, or custom
+    pre {
+      background-color: transparent;
+      border: none;
+      margin: 0;
+      code {
+        font-size: $font-size-base * 0.9;
+      }
+    }
+  }
+
+  .hero-cta {
+    @include button-variant(transparent, $primary-color, $primary-color, $primary-color, $dark-bg, $primary-color);
+    padding: ($spacer * 0.75) ($spacer * 2.5);
+    font-size: $font-size-base * 1.1;
+    font-weight: 700;
+  }
+}
+
+.section-padding {
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
+}
+
+.section-title {
+  margin-bottom: $spacer * 3;
+}
+
+.features-section {
+  .feature-card {
+    background-color: $dark-surface;
+    padding: $spacer * 2;
+    border-radius: $border-radius-lg;
+    text-align: center;
+    border: 1px solid $dark-border;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba($primary-color, 0.1);
+    }
+
+    .feature-icon {
+      height: 60px; // Adjust as needed
+      margin-bottom: $spacer * 1.5;
+      // filter: invert(70%) sepia(100%) saturate(500%) hue-rotate(130deg); // Example to colorize SVG
+    }
+    .feature-title {
+      font-size: $font-size-base * 1.4;
+      color: $light-text;
+      margin-bottom: $spacer * 0.5;
+    }
+    .feature-description {
+      color: $medium-text;
+      font-size: $font-size-base * 0.9;
+    }
+  }
+}
+
+.testimonials-section {
+  background-color: $dark-surface; // Or a slightly different dark accent
+  color: $light-text;
+  .testimonial-slider {
+    // Basic styling, a proper slider/carousel needs JS
+    .testimonial-item {
+      background-color: lighten($dark-surface, 5%);
+      padding: $spacer * 1.5;
+      border-radius: $border-radius;
+      margin-bottom: $spacer; // For stacked display before JS carousel
+      border-left: 4px solid $primary-color;
+      
+      .testimonial-text {
+        font-style: italic;
+        margin-bottom: $spacer;
+        font-size: $font-size-base * 1.1;
+      }
+      .testimonial-author {
+        font-weight: 700;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+.pricing-section {
+  .pricing-card {
+    background-color: $dark-surface;
+    padding: $spacer * 2;
+    border-radius: $border-radius-lg;
+    border: 1px solid $dark-border;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    position: relative; // For popular badge
+
+    &.popular {
+      border-color: $primary-color;
+      box-shadow: 0 0 20px rgba($primary-color, 0.2);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $primary-color !important; // Override Bootstrap
+      color: $dark-bg;
+      font-weight: 700;
+    }
+
+    .pricing-plan-name {
+      font-size: $font-size-base * 1.5;
+      color: $light-text;
+      margin-bottom: $spacer * 0.5;
+    }
+    .pricing-price {
+      font-size: $font-size-base * 2.5;
+      font-weight: 700;
+      color: $primary-color;
+      margin-bottom: $spacer;
+      .pricing-period {
+        font-size: $font-size-base * 0.9;
+        color: $medium-text;
+        font-weight: 400;
+      }
+    }
+    .pricing-features {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: $spacer * 1.5;
+      li {
+        margin-bottom: $spacer * 0.5;
+        color: $medium-text;
+        &::before { // Custom checkmark or bullet
+          content: '✓';
+          color: $primary-color;
+          margin-right: $spacer * 0.5;
+        }
+      }
+    }
+    .btn-primary {
+      @include button-variant($primary-color, $dark-bg);
+    }
+    .btn-outline-primary {
+      @include button-variant(transparent, $primary-color, $primary-color, $primary-color, $dark-bg, $primary-color);
+    }
+  }
+}
+
+// Animation helper classes (can be moved to _utilities.scss or _animations.scss)
+.animate-on-load, .animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px); // Initial state for GSAP
+}

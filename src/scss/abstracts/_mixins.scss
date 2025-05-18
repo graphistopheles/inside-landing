@@ -1,0 +1,36 @@
+// Mixin for media queries
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+  @if $min {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @warn "No value found for `#{$name}` in $breakpoints map. Only media queries for defined breakpoints are supported.";
+  }
+}
+
+// Mixin for flexbox centering
+@mixin flex-center($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// Mixin for button styles
+@mixin button-variant($background, $color, $border-color: $background, $hover-background: darken($background, 10%), $hover-color: $color, $hover-border-color: darken($border-color, 10%)) {
+  background-color: $background;
+  color: $color;
+  border-color: $border-color;
+  transition: $transition-base;
+
+  &:hover, &:focus {
+    background-color: $hover-background;
+    color: $hover-color;
+    border-color: $hover-border-color;
+    box-shadow: 0 0 15px rgba($background, 0.5);
+  }
+}
+
+// Add other common mixins here (e.g., for animations, typography scales)
