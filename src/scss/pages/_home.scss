@@ -14,7 +14,8 @@
     font-weight: 500;
     text-align: left;
     @include media-breakpoint-up(md) {
-      font-size: $font-size-base * 4.5;
+      font-size: $font-size-base * 4;
+      line-height: 1.2;
     }
   }
 
@@ -153,6 +154,7 @@ section {
   background-position: center;
   background-size: auto;
   background-size: cover;
+  background-attachment: fixed;
   @include media-breakpoint-up(md) {
     min-height: 63.5625rem;
   }
@@ -230,11 +232,15 @@ p {
     }
   }
   .card {
+    border-radius: 1rem;
     &:hover {
       transition: all 0.3s ease;
       transform: translateY(-0.9375rem);
       box-shadow: 0 .625rem 1.25rem rgba(0,0,0,0.1);
       background-color: #222;
+    }
+    img {
+      border-radius: 1rem;
     }
   }
   .section-title {
@@ -291,6 +297,7 @@ p {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -357,6 +364,7 @@ flex-direction: column;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   flex-direction: column;

@@ -65,7 +65,7 @@
     background-size: auto;
     background-size: cover;
     @include media-breakpoint-up(md) {
-        min-height: 632px;
+        min-height: 500px;
     }
     h2 {
       margin-bottom: 16px;

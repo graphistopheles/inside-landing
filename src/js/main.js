@@ -1,3 +1,17 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        const offset = 80; // Navbar height
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
 // Import Bootstrap's JS (all or specific components)
 // Option 1: Import all of Bootstrap JS (includes Popper)
 import 'bootstrap';

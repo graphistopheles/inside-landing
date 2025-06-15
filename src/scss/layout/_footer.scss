@@ -4,6 +4,8 @@
   padding-top: $section-padding;
   padding-bottom: $spacer; // Reduced bottom padding as footer-bottom has its own
   border-top: .0625rem solid $dark-border;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   @include media-breakpoint-up(md) {
 

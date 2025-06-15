@@ -1,0 +1,136 @@
+/* Tabs */
+
+/* --- Estructura y Layout --- */
+.component-wrapper {
+    width: 100%;
+    max-width: 1140px; /* Ancho máximo similar a un contenedor grande */
+    margin: auto;
+    display: grid;
+    padding: 2rem;
+    border-radius: 2rem;
+    padding-left: 0;
+    grid-template-columns: .5fr 1.5fr; /* Una columna por defecto para móviles */
+    gap: 1rem;
+    background: 
+    url(/img/services/ciberseguridad.png),
+    linear-gradient(90deg, var(--color-blue-110, rgba(14, 5, 52, 0.00)) 0%, var(--color-blue-19, #0D1B53) 100%);
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    background-position: right, center;
+}
+
+/* En pantallas grandes, cambiamos a la disposición de columnas */
+@media (min-width: 992px) {
+    .component-wrapper {
+        grid-template-columns: 1fr 2fr; /* Proporción 1/3 para pestañas, 2/3 para contenido */
+        gap: 1rem;
+    }
+}
+
+.content-area-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto para móviles */
+    gap: 1rem;
+    align-items: center;
+    height: 100%;
+}
+
+@media (min-width: 768px) {
+     .content-area-grid {
+         grid-template-columns: 1.5fr .5fr; /* Dos columnas para texto e imagen en tablets y superior */
+     }
+}
+
+/* --- Estilos de Pestañas de Navegación --- */
+.nav-pills {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Espacio entre los botones de las pestañas */
+}
+
+.nav-pills .nav-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #b0c4de;
+    transition: all 0.3s ease;
+    text-align: left;
+    font-weight: 500;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    max-width: 310px;
+}
+
+.nav-pills .nav-link svg {
+    width: 1.5rem; /* 24px */
+    height: 1.5rem; /* 24px */
+    margin-right: 0.75rem; /* 12px */
+    flex-shrink: 0; /* Evita que el icono se encoja */
+}
+
+.nav-pills .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: transparent; 
+    border-color: #3b82f6;
+    color: #ffffff;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+}
+
+.nav-pills .nav-link.active svg {
+    stroke: #ffffff;
+}
+
+/* --- Estilos de Contenido --- */
+.tab-content .tab-pane {
+    padding: 1rem;
+}
+
+.content-title {
+    font-size: 2rem; /* 36px */
+    font-weight: 500;
+    color: $white;
+    margin-bottom: 0;
+    letter-spacing: 0.05em; /* Ligeramente más espaciado */
+}
+
+.content-text {
+    font-size: 1.125rem; /* 18px */
+    color: #dbeafe; /* Un azul muy claro */
+    line-height: 1.6;
+    margin-bottom: 0 !important;
+}
+
+/* --- Estilos de Imagen --- */
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reference-image {
+    width: 100%;
+    max-width: 24rem; /* 384px */
+    border-radius: 1.5rem; /* 24px */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    background-color: rgba(226, 232, 240, 0.1);
+}
+
+.nav-pills .nav-link.active {
+    color: #42E8E0;
+}
+
+.nav-pills .nav-link.active svg {
+        stroke: #42E8E0;
+        fill: #42E8E0
+}
