@@ -1,13 +1,17 @@
 // Color Palette (Dark Theme with Vibrant Accents)
-$primary-color: #66FFCC; // Vibrant Mint
+$primary-color: #3E91D5; // Vibrant Mint
 $secondary-color: #FF66B2; // Vibrant Pink
+$tertiary-color: #75A8D2;  // Vibrant Green
 $accent-color: #FFD700;   // Vibrant Gold
 
-$dark-bg: #1A1D24;        // Deep Dark Blue/Gray
+$dark-bg: #070711;        // Deep Dark Blue/Gray
+$dark-bg1: #44546A;        // Deep Dark Blue/Gray
 $dark-surface: #2A2D3A;   // Slightly Lighter Dark Surface
 $dark-border: #3A3D4A;    // Dark Border
+$footer-bg: #0C111D;
+$white: #FFFFFF;
 
-$light-text: #E0E0E0;     // Light Gray Text
+$light-text: #D0D5DD;     // Light Gray Text
 $medium-text: #A0A0A0;    // Medium Gray Text
 $dark-text: #121212;      // For light backgrounds if ever needed
 
@@ -19,7 +23,7 @@ $link-hover-color: darken($primary-color, 10%);
 $border-color: $dark-border;
 
 // Typography
-$font-family-sans-serif: 'Space Grotesk', sans-serif; // Titles, general text
+$font-family-sans-serif: 'Source Sans 3', sans-serif; // Titles, general text
 $font-family-monospace: 'Roboto Mono', monospace;    // Code details, specific text
 $font-size-base: 1rem; // 16px
 $line-height-base: 1.6;

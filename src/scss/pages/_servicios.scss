@@ -1,0 +1,86 @@
+/* Servicios */
+
+.hero-servicios {
+    background: url(/img/services/services-fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    .container {
+        align-items: center;
+        @include media-breakpoint-up(md) {
+            display: flex;
+            img {
+                max-width: 36.25rem;
+            }
+        }
+    }
+}
+
+.service-box {
+    color: $white;
+    display: flex;
+    width: 596px;
+    padding: var(--s-md, 32px) var(--s-md-2, 32px);
+    align-items: center;
+    border-radius: var(--s-sm, 16px);
+    border: 2px solid rgba(255, 255, 255, 0.10);
+    background-color: rgba(62, 145, 213, 0.10);
+    background-image: url(/img/icons/servicios1.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 32px;
+    flex-direction: column;
+    text-align: left;
+    max-width: 500px;
+    width: 100%;
+    h4 {
+        display: flex;
+        align-items: start;
+    }
+    @include media-breakpoint-up(md) {
+        margin-bottom: 16px;
+    }
+    h3 {
+        font-size: 24px;
+        text-align: left;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    p {
+    font-size: 20px;
+    margin-bottom: 0;
+    }
+    &.darker-box {
+        background-color: rgba(0, 0, 0, 0.60);
+        background-image: url(/img/icons/servicios2.svg);
+       // border: 2px solid rgba(255, 255, 255, 0.30); 
+    }
+}
+
+.service-acordeon-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/services/acordeon-fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    background-size: cover;
+    @include media-breakpoint-up(md) {
+        min-height: 632px;
+    }
+    h2 {
+      margin-bottom: 16px;
+      small {
+        font-size: 16px;
+        display: block;
+      }
+    }
+    p {
+      
+      max-width: 60.25rem;
+      margin: auto;
+      margin-bottom: 32px;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 3.25rem;
+      }
+    }
+  }

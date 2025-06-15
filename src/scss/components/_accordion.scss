@@ -1,0 +1,61 @@
+/* Accordion */
+
+
+.accordion-custom {
+    --bs-accordion-bg: rgba(0,0,0,.3); /* Color de fondo principal del acordeón */
+    --bs-accordion-border-color: rgba(255, 255, 255, 0.1);
+    --bs-accordion-border-radius: 0.75rem; /* Bordes redondeados */
+    --bs-accordion-inner-border-radius: 0.75rem;
+    --bs-accordion-btn-color: #f8f9fa; /* Color del texto del encabezado */
+    --bs-accordion-btn-focus-box-shadow: none; /* Sin sombra al hacer foco */
+    --bs-accordion-active-color: #f8f9fa; /* Color del texto cuando está activo */
+    --bs-accordion-active-bg: rgba(0,0,0,.6); /* Color de fondo cuando está activo */
+    
+    /* Personalización del icono de flecha (chevron) de Bootstrap */
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f8f9fa'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23f8f9fa'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+    img {
+        margin-right: 0.5rem;
+    }
+
+}
+
+.accordion-custom .accordion-item {
+    margin-bottom: 1rem; /* Espacio entre los elementos del acordeón */
+    border-radius: var(--bs-accordion-border-radius) !important;
+    overflow: hidden; /* Asegura que los bordes redondeados se apliquen correctamente */
+    h2 {
+        margin-bottom: 0;
+    }
+    p {
+        padding-top: 1rem;
+    }
+}
+
+.accordion-custom .accordion-button {
+    font-weight: 500;
+}
+
+/* Oculta el borde que aparece entre items */
+.accordion-custom .accordion-item + .accordion-item {
+    border-top: 0;
+}
+
+.accordion-custom .accordion-body {
+    color: #d1d5db; /* Color del texto del cuerpo */
+    background-color: rgba(0,0,0,.3);  /* Mismo fondo que el encabezado para una apariencia uniforme */
+    padding-top: 0; /* Unir el cuerpo con el encabezado */
+}
+
+.accordion-custom .accordion-button:not(.collapsed) {
+    box-shadow: none; /* Elimina la sombra interna cuando está desplegado */
+}
+
+/* Estilo para los iconos de Font Awesome */
+.accordion-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 40px; /* Ancho fijo para alineación */
+    text-align: center;
+}

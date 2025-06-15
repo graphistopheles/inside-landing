@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inside Security</title>
+    <meta name="description" content="Ciberseguridad, Desarrollo de Software, Infraestructura y Entrenamiento profesional" />
+    <!-- Favicon (example, replace with your actual favicon) -->
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg">
+    <!-- Bootstrap CSS (Consider importing via SASS for better optimization) -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- Main SASS/CSS file -->
+    <link rel="stylesheet" href="/scss/main.scss">
+    <!-- Fonts (Example: Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme home-page-identifier"> <!-- Added home-page-identifier -->
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="/img/logos/logo.svg" alt="Inside Land Logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about.html">Quiénes Somos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/services.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section text-center">
+            <div class="container">
+                <h1 class="hero-title animate-on-load">Code <span class="highlight">Creatively</span>. Build <span class="highlight">Beautifully</span>.</h1>
+                <p class="hero-subtitle animate-on-load delay-1">The ultimate code editor for developers who demand Awwwards-level precision and aesthetics.</p>
+                <div class="interactive-code-editor animate-on-load delay-2">
+                    <!-- Placeholder for GSAP animated code editor -->
+                    <pre><code class="language-javascript">// Welcome to Inside Land!
+function greet(name) {
+    console.log(`Hello, ${name}! Enjoy the Awwwards experience.`);
+}
+greet('Developer');</code></pre>
+                </div>
+                <a href="#features" class="btn btn-outline-light btn-lg hero-cta animate-on-load delay-3">Discover Features</a>
+            </div>
+        </section>
+
+        <!-- Section 1: Main Features -->
+        <section id="features" class="features-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center animate-on-scroll">Why Choose <span class="highlight">Inside Land</span>?</h2>
+                <div class="row g-4 mt-5">
+                    <div class="col-md-4 animate-on-scroll">
+                        <div class="feature-card">
+                            <img src="/assets/icons/feature-speed.svg" alt="Speed Icon" class="feature-icon">
+                            <h3 class="feature-title">Blazing Fast</h3>
+                            <p class="feature-description">Optimized for performance, ensuring a smooth and responsive coding experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-on-scroll delay-1">
+                        <div class="feature-card">
+                            <img src="/assets/icons/feature-design.svg" alt="Design Icon" class="feature-icon">
+                            <h3 class="feature-title">Stunning UI/UX</h3>
+                            <p class="feature-description">A meticulously crafted interface that inspires creativity and focus.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-on-scroll delay-2">
+                        <div class="feature-card">
+                            <img src="/assets/icons/feature-tools.svg" alt="Tools Icon" class="feature-icon">
+                            <h3 class="feature-title">Powerful Tools</h3>
+                            <p class="feature-description">Integrated with advanced tools and extensions to boost your productivity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Testimonials -->
+        <section id="testimonials" class="testimonials-section section-padding bg-dark-accent">
+            <div class="container">
+                <h2 class="section-title text-center text-white animate-on-scroll">Loved by <span class="highlight">Developers</span> Worldwide</h2>
+                <!-- Placeholder for Testimonial Slider/Carousel -->
+                <div class="testimonial-slider mt-5 animate-on-scroll delay-1">
+                    <div class="testimonial-item">
+                        <p class="testimonial-text">"Inside Land has revolutionized my workflow. The animations and design are simply breathtaking!"</p>
+                        <p class="testimonial-author">- Alex P., Lead Developer @ TechSolutions</p>
+                    </div>
+                    <div class="testimonial-item"> <!-- Add more items for a carousel -->
+                        <p class="testimonial-text">"Finally, a code editor that understands the importance of aesthetics and performance. Highly recommended!"</p>
+                        <p class="testimonial-author">- Sarah K., Freelance Web Designer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Plans and Pricing -->
+        <section id="pricing" class="pricing-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center animate-on-scroll">Flexible <span class="highlight">Pricing</span> for Everyone</h2>
+                <div class="row g-4 mt-5 justify-content-center">
+                    <div class="col-md-4 animate-on-scroll">
+                        <div class="pricing-card">
+                            <h3 class="pricing-plan-name">Starter</h3>
+                            <p class="pricing-price">$0<span class="pricing-period">/month</span></p>
+                            <ul class="pricing-features">
+                                <li>Basic Editor Features</li>
+                                <li>Community Support</li>
+                                <li>1 Project</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Get Started</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-on-scroll delay-1">
+                        <div class="pricing-card popular">
+                            <span class="badge bg-primary popular-badge">Most Popular</span>
+                            <h3 class="pricing-plan-name">Pro</h3>
+                            <p class="pricing-price">$15<span class="pricing-period">/month</span></p>
+                            <ul class="pricing-features">
+                                <li>All Starter Features</li>
+                                <li>Advanced Tools & Integrations</li>
+                                <li>Unlimited Projects</li>
+                                <li>Priority Support</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100">Choose Pro</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 animate-on-scroll delay-2">
+                        <div class="pricing-card">
+                            <h3 class="pricing-plan-name">Enterprise</h3>
+                            <p class="pricing-price">Custom</p>
+                            <ul class="pricing-features">
+                                <li>All Pro Features</li>
+                                <li>Dedicated Support</li>
+                                <li>Custom Solutions</li>
+                                <li>Team Collaboration</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline-primary w-100">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer-main text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase footer-title">Inside Land</h5>
+                    <p>
+                        Crafting the future of code editing. Join us on a journey of creativity and innovation.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase footer-links-title">Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="/about.html" class="footer-link">About Us</a></li>
+                        <li><a href="/services.html" class="footer-link">Services</a></li>
+                        <li><a href="/blog.html" class="footer-link">Blog</a></li>
+                        <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase footer-links-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#!" class="footer-link">FAQ</a></li>
+                        <li><a href="#!" class="footer-link">Documentation</a></li>
+                        <li><a href="#!" class="footer-link">Contact Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-3 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase footer-links-title">Newsletter</h5>
+                    <form action="#" class="newsletter-form">
+                        <input type="email" placeholder="Your email" class="form-control mb-2">
+                        <button type="submit" class="btn btn-primary btn-sm w-100">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom p-3">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                <span class="text-muted">© 2024 Inside Land. All Rights Reserved.</span>
+                <div class="social-media-icons">
+                    <a href="#!" class="social-icon"><img src="/assets/icons/social-github.svg" alt="GitHub"></a>
+                    <a href="#!" class="social-icon"><img src="/assets/icons/social-twitter.svg" alt="Twitter"></a>
+                    <a href="#!" class="social-icon"><img src="/assets/icons/social-linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle (Popper.js included) -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/ScrollTrigger.min.js"></script>
+    <!-- Syntax Highlighting (e.g., Prism.js or Highlight.js) - Add if needed for code editor -->
+    <!-- <script src="path/to/prism.js"></script> -->
+    <!-- Main JS File -->
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

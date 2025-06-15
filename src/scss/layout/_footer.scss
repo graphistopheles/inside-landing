@@ -1,9 +1,20 @@
 .site-footer-main {
-  background-color: $dark-surface;
+  background-color: $footer-bg;
   color: $medium-text;
   padding-top: $section-padding;
   padding-bottom: $spacer; // Reduced bottom padding as footer-bottom has its own
-  border-top: 1px solid $dark-border;
+  border-top: .0625rem solid $dark-border;
+
+  @include media-breakpoint-up(md) {
+
+    .btn {
+      max-width: 228px;
+    }
+  }
+
+  .container {
+    max-width: 74rem;
+  }
 
   .footer-title {
     color: $light-text;
@@ -26,10 +37,14 @@
   }
 
   .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     .form-control {
       background-color: lighten($dark-surface, 5%);
       border-color: $dark-border;
       color: $light-text;
+      max-width: 528px;
       &::placeholder {
         color: $medium-text;
       }
@@ -40,16 +55,25 @@
   }
 
   .footer-bottom {
-    background-color: darken($dark-surface, 3%);
-    border-top: 1px solid $dark-border;
-    margin-top: $section-padding * 0.5;
-    color: darken($medium-text, 10%);
+    //background-color: darken($dark-surface, 3%);
+   display: flex;
+   flex-direction: column;
+   margin-top: 4rem;
+   justify-content: space-between;
+   @include media-breakpoint-up(md) {
+flex-direction: row;
+   }
 
     .social-media-icons {
+      display: flex;
+      gap: 1rem;
       .social-icon {
-        margin-left: $spacer;
+        @include media-breakpoint-up(md){
+
+          margin-left: $spacer;
+        }
         img {
-          height: 24px; // Adjust as needed
+          height: 1.5rem; // Adjust as needed
           opacity: 0.7;
           transition: opacity $transition-base;
         }

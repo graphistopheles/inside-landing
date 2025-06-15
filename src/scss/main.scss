@@ -35,7 +35,7 @@
 @import "~bootstrap/scss/nav";
 @import "~bootstrap/scss/navbar"; // For header
 @import "~bootstrap/scss/card";
-// @import "~bootstrap/scss/accordion";
+@import "~bootstrap/scss/accordion";
 // @import "~bootstrap/scss/breadcrumb";
 // @import "~bootstrap/scss/pagination";
 @import "~bootstrap/scss/badge";
@@ -44,7 +44,7 @@
 // @import "~bootstrap/scss/list-group";
 @import "~bootstrap/scss/close";
 // @import "~bootstrap/scss/toasts";
-// @import "~bootstrap/scss/modal";
+@import "~bootstrap/scss/modal";
 // @import "~bootstrap/scss/tooltip";
 // @import "~bootstrap/scss/popover";
 // @import "~bootstrap/scss/carousel"; // If using Bootstrap carousel
@@ -70,12 +70,20 @@
 
 // 5. Components (Buttons, Cards, Forms, etc.)
 // @import 'components/buttons'; // If custom buttons beyond Bootstrap
-@import 'components/cards'; // For feature cards, pricing cards if custom
+@import 'components/cards'; 
+@import 'components/navbar'; 
+@import 'components/buttons'; 
+@import 'components/forms'; 
+@import 'components/modal'; 
+@import 'components/cta'; 
+@import 'components/accordion'; 
 // @import 'components/code-editor'; // For the interactive code editor
 // @import 'components/slider'; // For testimonials
 
 // 6. Page-specific styles
 @import 'pages/home';
+@import 'pages/quienes';
+@import 'pages/servicios';
 // @import 'pages/about';
 // @import 'pages/services';
 // @import 'pages/blog';

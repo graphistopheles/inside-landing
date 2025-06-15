@@ -1,0 +1,36 @@
+/* CTA */
+
+.cta-section {
+    background: url(/img/about/cta-fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cta {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 4rem;
+    background: linear-gradient(106deg, #000 0%, var(--celeste-primario, #3E91D5) 50%, #000 100%);
+    border-radius: 24px;
+    margin: 32px auto;
+    @include media-breakpoint-up(md)  {
+        margin: 128px auto;
+        background: url(/img/about/fondo-cta-caja.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        max-width: 468px;
+        margin: auto;
+    }
+    p {
+        font-size: 20px;
+        max-width: 37.5rem;
+        margin: 1rem auto 2rem;
+    }
+}

@@ -1,0 +1,43 @@
+/* Modal */
+
+.modal-content {
+    background-color: $white;
+    color: $dark-text;
+    .name {
+        font-weight: 500;
+        margin-bottom: 0;
+        font-size: 2rem;
+       display: none;
+    }
+    h5 {
+        font-size:2rem !important;
+    }
+    h6 {
+        font-size: 1.5rem !important;
+        font-weight: 500 !important;
+        color: $dark-bg1;
+    }
+}
+
+.modal-title {
+    color: $dark-bg1;
+}
+.modal-header {
+    border-bottom: 1px solid #DDD;
+}
+
+.team-member-modal {
+    border-radius: 1rem;
+}
+
+.modal-body {
+    .linkedin-icon {
+     display: flex;
+     align-items: center;
+     gap: 0.5rem;
+     font-size: 1.2rem;
+     img {
+        margin: 0;
+     }
+    }
+}

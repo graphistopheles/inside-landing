@@ -1,0 +1,36 @@
+/* Botones */
+
+//Vars
+
+:root {
+    --bs-btn-hover-bg: #000 !important;
+}
+
+.btn {
+    background-color: #0C111D;
+    border: 1px solid transparent;
+    color: #FFF;
+    min-width: 14.25rem;
+    text-decoration: none;
+    &:hover {
+        background-color: #000;
+        text-decoration: none;
+        color: $light-text;
+        border: 1px solid $primary-color;
+    }
+    &-primary {
+        background-color: $dark-bg1;
+        border: 1px solid transparent;
+    }
+    &-secondary {
+
+    }
+    &-outline-secondary {
+        background-color: transparent;
+        color: $primary-color;
+        padding: 0;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
