@@ -11,10 +11,10 @@ export default defineConfig(({ mode }) => {
       rollupOptions: {
         input: {
           main: resolve(__dirname, 'src/index.html'),
-          about: resolve(__dirname, 'src/about.html'),
-          services: resolve(__dirname, 'src/services.html'),
+          about: resolve(__dirname, 'src/quienes.html'),
+          services: resolve(__dirname, 'src/servicios.html'), // Changed from services.html to servicios.html
           blog: resolve(__dirname, 'src/blog.html'),
-          blogDetail: resolve(__dirname, 'src/blog-detail.html'),
+          blogDetail: resolve(__dirname, 'src/blog-detalle.html'),
         },
       },
       minify: mode === 'prod' ? 'terser' : false,
