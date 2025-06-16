@@ -19,22 +19,22 @@
 <body class="dark-theme home-page-identifier"> <!-- Added home-page-identifier -->
 
     <!-- Header -->
-    <header class="site-header">
+    <header class="site-header header-animation">
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="/">
-                    <img src="/img/logos/logo.svg" alt="Inside Land Logo" class="logo">
+            <div class="container nav-animation">
+                <a class="navbar-brand brand-animation" href="/">
+                    <img src="/img/logos/logo.svg" alt="Inside Land Logo" class="logo logo-animation">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" aria-current="page" href="/">Inicio</a></li>
+                    <ul class="navbar-nav ms-auto menu-animation">
+                        <li class="nav-item"><a class="nav-link " aria-current="page" href="/">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link active" href="/quienes.html">Quiénes Somos</a></li>
                         <li class="nav-item"><a class="nav-link" href="/servicios.html">Servicios</a></li>
                         <li class="nav-item"><a class="nav-link" href="/blog.html">Blog</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#contact">Contacto</a></li>
                     </ul>
                     
                 </div>
@@ -44,23 +44,23 @@
 
     <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero-section hero-quienes text-center">
+        <section class="hero-section hero-left hero-quienes text-center">
             <div class="container">
                 <div class="text-hero">
-                    <div class="vineta">
+                    <div class="vineta hero-subtitle">
                         <img src="/img/logos/isotipo.svg" alt="">
                         Quienes Somos
                     </div>
-                    <h1 class="hero-title animate-on-load">
+                    <h1 class="hero-title animate-on-load hero-title">
                         Nuestras personas <br>
- <span class="highlight">nos diferencian</span>
+ <span class="highlight hero-title-emphasis">nos diferencian</span>
                     </h1>
-                    <p class="hero-subtitle animate-on-load delay-1">
+                    <p class="hero-subtitle animate-on-load delay-1 hero-description">
                         Conoce a los expertos que hacen de Inside Security  un referente en ciberseguridad.
                     </p>
                     <!-- <a href="#features" class="btn btn-outline-light btn-lg hero-cta animate-on-load delay-3">Discover Features</a> -->
                 </div>
-                <img src="/img/about/quienes-hero.png" alt="">
+                <img src="/img/about/quienes-hero.png" class="hero-right hero-image" alt="">
             </div>
         </section>
 
@@ -78,7 +78,7 @@
     </p>
     <div class="row">
         <div class="col-12 col-md-6">
-            <div class="box-service">
+            <div class="box-service service-card">
                 <h4> <img src="/img/icons/shield.svg" alt=""> <span>Inside Security: visión, innovación y compromiso en ciberseguridad</span>  </h4>
                 <p>
                     Inside Security fue fundada por David Reyes Letelier, un visionario empresario chileno que tempranamente se 
@@ -91,7 +91,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6">
-            <div class="box-service">
+            <div class="box-service service-card">
                 <h4> <img src="/img/icons/shield.svg" alt=""> Misión</h4>
                 <p>
                     Ser una marca reconocida en el mercado, que cuenta con una organización robusta 
@@ -99,7 +99,7 @@
                 </p>
             </div>
 
-            <div class="box-service">
+            <div class="box-service service-card">
                 <h4> <img src="/img/icons/shield.svg" alt=""> Visión</h4>
                 <p>
                     Acompañamos a las organizaciones en el progreso de su negocio a través del 
@@ -145,7 +145,7 @@
     <div class="section-spacing ">
         <h3 class="section-title text-center">Consejo Asesor</h3>
         <div class="row">
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-4 col-lg-4">
                 <!-- 1 -->
                 <div class="team-member">
                     <img src="/img/about/team/david.png" alt="Miembro del consejo">
@@ -165,7 +165,7 @@
                 </div>
             </div>
             
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-4 col-lg-4">
                 <!-- 2 -->
                 <div class="team-member">
                     <img src="/img/about/team/alejandra.png" alt="Miembro del consejo">
@@ -184,27 +184,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <!-- 3 -->
-                <div class="team-member">
-                    <img src="/img/about/team/sebastian.png" alt="Miembro del consejo">
-                    <h4 class="name text-center">Sebastián Lekanda</h4>
-                    <!-- <div class="position text-center">Consejero Estrategia <br> y Control de Gestión</div> -->
-                    <div class="position text-center">Consejero Estrategia</div>
-                    <p class="description text-center">Sebastián Lekanda cuenta con...</p>
-                    <div class="text-center">
-                        <div class="mt-2">
-                            <a href="https://www.linkedin.com/in/juan-sebasti%C3%A1n-lekanda-laban/" class="linkedin-icon" target="_blank">
-                                <img src="/img/logos/linkedin.svg" alt="">
-                            </a>
-                        </div>
-                        <a href="#" class="btn btn-outline-secondary" 
-                        data-bs-toggle="modal" data-bs-target="#teamModal3"
-                        >Ver Más</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-4 col-lg-4">
                 <!-- 4 -->
                 <div class="team-member">
                     <img src="/img/about/team/andres.png" alt="Miembro del consejo">
@@ -361,14 +341,15 @@
                 <div class="animate-on-scroll delay-1">
                     <div class="cta">
                         <h2>
-                            Inside Security, confianza y seguridad en tus manos
+                            Conversemos
                         </h2>
                         <p>
-                            Experience how FraudNet can help make an impact on your fraud and risk program
-with real-time, AI-driven protection.
+                            
+Si tienes alguna consulta, necesitas más información sobre nuestros servicios 
+o simplemente quieres conectarte con nosotros, no dudes en hacerlo.
                         </p>
-                        <a href="#" class="btn btn-primary">
-                            Conoce Más Aquí
+                        <a href="/#contact" class="btn btn-primary">
+                            Contáctate aquí
                         </a>
                     </div>
                 </div>
@@ -480,14 +461,14 @@ with real-time, AI-driven protection.
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer-main text-lg-start">
+    <footer class="site-footer-main footer-anim text-lg-start">
         <div class="container">
             <div class="row">
                 <div class="col-12 mb-4">
-                    <img src="/img/logos/logo-up.svg" alt="">
+                    <img src="/img/logos/logo-up.svg" class="footer-logo" alt="">
                 </div>
                 <div class="col-12 col-md">
-                    <p>
+                    <p class="footer-description">
                         Inside Security es una empresa legalmente constituida en Chile, con la misión de ofrecer servicios 
                         y soluciones de calidad que buscan disminuir los riesgos asociados con la delincuencia informática 
                         a través del trabajo ético y profesional.
@@ -497,20 +478,22 @@ with real-time, AI-driven protection.
                 <div class="col-12 col-md">
                     
                     <form action="#" class="newsletter-form">
-                        <input type="email" placeholder="Your email" class="form-control mb-2">
-                        <button type="submit" class="btn btn-primary btn-sm w-100">Trabaja con Nosotros</button>
+                        <input type="email" placeholder="Your email" class="form-control mb-2 newsletter-form input">
+                        <button type="submit" class="btn btn-primary btn-sm w-100 btn-work-with-us">Trabaja con Nosotros</button>
                     </form>
                 </div>
                 <div class="col-12">
                     <div class="footer-bottom">
-                        <span class="text-muted">Copyright © 2025 Inside Security. Todos los derechos reservados.</span>
+                        <span class="text-muted footer-copyright">Copyright © 2025 Inside Security. Todos los derechos reservados.</span>
                         <div class="social-media-icons">
                             <!-- <a href="#!" class="social-icon"><img src="/assets/icons/social-github.svg" alt="GitHub"></a>
                             <a href="#!" class="social-icon"><img src="/assets/icons/social-twitter.svg" alt="Twitter"></a>
                             <a href="#!" class="social-icon"><img src="/assets/icons/social-linkedin.svg" alt="LinkedIn"></a> -->
-
-                            <a href="#!" class="social-icon">Linkedin</a>
-                            <a href="#!" class="social-icon">Políticas de Privacidad</a>
+<div class="footer-links">
+    <a href="#!" class="social-icon">Linkedin</a>
+    <a href="#!" class="social-icon">Políticas de Privacidad</a>
+</div>
+                            
 
                         </div>
                     </div>

@@ -37,7 +37,7 @@
 
 @media (min-width: 768px) {
      .content-area-grid {
-         grid-template-columns: 1.5fr .5fr; /* Dos columnas para texto e imagen en tablets y superior */
+         grid-template-columns: 1fr .5fr; /* Dos columnas para texto e imagen en tablets y superior */
      }
 }
 
