@@ -28,6 +28,7 @@ import 'bootstrap';
 // Import page-specific animations or component scripts
 import { initHomeAnimations } from './animations/homeAnimations.js';
 import { initCommonAnimations } from './animations/commonAnimations.js';
+import './animations/headerAnimation.js';
 // import { initCodeEditor } from './components/codeEditor.js'; // If you have a JS component for it
 
 document.addEventListener('DOMContentLoaded', () => {
