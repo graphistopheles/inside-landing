@@ -367,9 +367,9 @@ const footerTl = gsap.timeline({
     scrollTrigger: {
         scrollTrigger: {
             trigger: ".footer-anim",
-            start: "bottom-=10%", // Cuando el 90% del footer entra en el viewport desde abajo
-            // markers: true, // Descomentar para ver los marcadores de ScrollTrigger
-            once: true // Reproducir solo una vez
+            start: "top bottom", // Cuando el 90% del footer entra en el viewport desde abajo
+            markers: true, // Descomentar para ver los marcadores de ScrollTrigger
+            once: false // Reproducir solo una vez
         }
     }
   });
